@@ -1,0 +1,541 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	margin:0;padding:0;
+}
+ol,ul {
+	list-style:none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font: 14px/22px "Hiragino Sans GB","微软雅黑","宋体";
+    color: #333;
+    word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+}
+.logo{
+	float:left;
+}
+/* 清理浮动 */
+.clearfix:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+.clearfix {
+	zoom:1; /* for IE6 IE7 */
+}
+.box{
+	overflow: hidden;
+}
+
+.header-border{
+	background: #00b38a;
+	height: 3px;
+}
+.header{
+	background: #fafafa;
+}
+.header-bg{
+	width: 1030px;
+	margin:0 auto;
+}
+.middle{
+	position: relative;
+    background: url("../images/bg.png") no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+    min-height: 549px;
+}
+.bg{
+	z-index: -9999;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+}
+.contain{
+    width: 960px;
+    margin: 0 auto;
+}
+.left{
+    float: left;
+    position: relative;
+    width: 527px;
+    height: 383px;
+    margin-top: 83px;
+}
+
+.img-1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.img-2{
+    position: absolute;
+    top: 0px;
+    left: 182px;
+}
+.img-3{
+    position: absolute;
+    top: 0px;
+    left: 366px;
+}
+.img-4{
+    position: absolute;
+    top: 233px;
+    left: 0px;
+}
+.img-5{
+    position: absolute;
+    top: 233px;
+    left: 273px;
+}
+.model:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.footer{
+	height: 97px;
+    background: #fff;
+    padding-top: 48px;
+}
+.info{
+	width: 1045px;
+    margin: 0 auto;
+}
+.info li{
+	float: left;
+	margin-right: 65px;
+    *width: 208px;
+}
+.info .end{
+	float: left;
+	margin-right: 0px;
+}
+.info div{
+    float: right;
+    margin-left: 15px;
+}
+.info li img{
+	float: left;
+}
+.info .title{
+	font-size: 18px;
+	color: #333333;
+	height: 20px;
+	line-height: 20px;
+}
+.info .content{
+	font-size: 14px;
+	color: #999999;
+	height: 32px;
+	line-height: 32px;
+}
+
+
+
+#lp_loginform label {
+    /* margin: 7px auto 25px; */
+    margin: 7px auto 10px;
+    display: block;
+}
+#lp_loginform h2 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+#lp_submit {
+    background: url(../images/button.png) no-repeat;
+    border: 0;
+    width: 308px;
+    height: 47px;
+}
+
+
+em {
+    font-style: normal;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+#lp_vcode {
+    width: 276px;
+    border: 1px solid #3fc4b0;
+    border-radius: 3px;
+    font-size: 16px;
+    /* padding: 6px 15px; */
+    height: 30px;
+    line-height: 30px;
+    margin: 0px 0 18px 0;
+    padding: 5px 15px;
+}
+.lp_agreeNotice em {
+    background: url(../images/check.png) left -12px no-repeat;
+    width: 14px;
+    height: 12px;
+    display: block;
+    float: left;
+    margin-top: 6px;
+    margin-right: 3px;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+    cursor: pointer;
+    -moz-transition: background-color 0.2s ease-out,color 0.1s ease-out;
+    -webkit-transition: background-color 0.2s ease-out,color 0.1s ease-out;
+    -ms-transition: background-color 0.2s ease-out,color 0.1s ease-out;
+    transition: background-color 0.2s ease-out,color 0.1s ease-out;
+}
+/*公司卡片*/
+.comp_box{
+    background: #fff;
+    width: 475px;
+    height: 308px;
+    position: absolute;
+    top: 54px;
+    left: 54px;
+    border-radius: 3px;
+    display: none;
+    z-index: 999;
+    box-shadow: 4px 4px 30px rgba(0,0,0,.3);
+}
+
+.comp_box:hover,.job_box:hover{
+	cursor: pointer;
+}
+.close{
+	position: absolute;
+    top: 12px;
+    right: 15px;
+}
+.close2{
+    position: absolute;
+    top: 12px;
+    right: -15px;
+    z-index: 9999;
+    display: none;
+}
+.aleft{
+    top: 3px;
+    right: 15px;
+}
+.close2:hover{
+    cursor: pointer;
+}
+.comp_box .compName,.job_box .jobName{
+	font-size: 20px;
+    color: #00b38a;
+    margin-top: 25px;
+    margin-left: 91px;
+}
+.comp_box .slogan,.job_box .slogan{
+	font-size: 18px;
+    color: #333333;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 83px;
+    margin-top: 10px;
+}
+.comp_box .jobList{
+	margin-left: 83px;
+	margin-top: 28px;
+}
+.jobList span{
+    display: inline-block;
+    width: 157px;
+    height: 27px;
+    line-height: 27px;
+    font-size: 14px;
+    color: #666666;
+    margin-right: 14px;
+}
+.welfare{
+	margin-left: 83px;
+}
+.welfare span{
+    background: url(../images/position/welfare.png) no-repeat;
+    width: 85px;
+    display: inline-block;
+    height: 29px;
+    line-height: 30px;
+    padding-left: 6px;
+    color: #00b38a;
+    font-size: 14px;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+/*职位卡片*/
+.job_box{
+	background: #fff;
+	width: 475px;
+	height: 215px;
+	position: absolute;
+	top: 54px;
+	left: 54px;
+	border-radius: 3px;
+	display: none;
+    box-shadow: 4px 4px 30px rgba(0,0,0,.3);
+	
+}
+.jobRequire{
+    margin-left: 83px;
+    margin-top: 20px;
+}
+.jobRequire span{
+    background: url(../images/position/salary-icon2.png) no-repeat;
+    width: 86px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 22px;
+    color: #666666;
+    font-size: 16px;
+    margin-top: 14px;
+}
+.jobRequire span.salary{
+	background: url(../images/position/salary-icon.png) no-repeat;
+	color: #ff7452;
+}
+
+
+.yipai{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    cursor: pointer;
+}
+.hd_right{
+    float: right;
+    line-height: 54px;
+    position: relative;
+    z-index: 99;
+}
+.app{
+	    padding-right: 15px;
+}
+.show_yipai,.app,.show_qiyeban{
+    font-size: 14px;
+    color: #999999;
+    margin-top: 15px;
+}
+.show_yipai:hover,.show_qiyeban:hover{
+	 cursor: pointer;
+}
+.show_yipai{
+    padding: 0px 20px;
+    border-right: 1px solid #e6e6e6;
+}
+.show_qiyeban{
+    padding: 0px 20px;
+    border-left: 1px solid #e6e6e6;
+}
+.appImg{
+    position: relative;
+    top: 3px;
+    margin-left: 16px;
+    margin-right: 5px;
+}
+.shade{
+    position: absolute;
+    top: 0px;
+    height: 458px;
+    z-index: 999;
+    display: none;
+}
+.yipai-shade{
+    position: absolute;
+    top: -25px;
+    height: 458px;
+    z-index: 999;
+    display: none;
+}
+.ma{
+	position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 54px;
+    right: 74px;
+    z-index: 999;
+    display: none;
+}
+
+/*login-css*/
+#mail_form{
+    display: none;
+}
+.coderli{
+    position: relative;
+}
+.lp_login {
+    width: 308px;
+    margin-top: 60px;
+    float: right;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #12a591;
+    padding: 28px 30px;
+}
+
+.tab{
+    position: relative;
+}
+.phone,.mail{
+    float: left;
+    padding:16px 20px;
+    color: #333333;
+    font-size: 16px;
+}
+.phone:hover,.mail:hover{
+    cursor: pointer;
+}
+.phone span,.mail span{
+    position: relative;
+    top: -2px;
+    left: 10px;
+}
+.active{
+    color: #00b38a;
+}
+
+.getcode{
+    display: inline-block;
+    width: 119px;
+    height: 44px;
+    border-radius: 3px;
+    background: #00b38a;
+    line-height: 43px;
+    text-align: center;
+    position: absolute;
+    left: 190px;
+    top: 12px;
+    color: #fff;
+}
+.getcode.disablecode{
+    background: #b2b2b2;
+    color: #fff;
+}
+input.error{
+    border:1px solid red;
+}
+.coder:hover{
+    cursor: pointer;
+}
+.line{
+    height: 1px;
+    width: 154px;
+    background: #00b38a;
+    position: relative;
+}
+.line:before{
+    position: absolute;
+    z-index: 2;
+    top: -12px;
+    left: 50%;
+    margin-left: -5px;
+    content: '';
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #00b38a;
+}
+.line:after {
+    z-index: 3;
+    position: absolute;
+    z-index: 2;
+    top: -9px;
+    left: 50%;
+    margin-left: -4px;
+    content: '';
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 5px solid transparent;
+    border-bottom-color: #fff;
+}
+form input{
+    background: #f5f5f5;
+    font-size: 16px;
+    width: 288px;
+    height: 14px;
+    padding: 15px 10px;
+    margin-top: 11px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+span.error {
+    color: #ff6a6a;
+    background: url(../images/error.png) 0px 3px no-repeat;
+    padding-left: 18px;
+    display: inline-block;
+   
+}
+.qqsina .icon_wb,.qqsina .icon_qq,.qqsina .icon_weixin{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.qqsina .icon_wb{
+    background: url("../images/common/login1.png");
+}
+.qqsina .icon_qq{
+    background: url("../images/common/login2.png");
+}
+.qqsina .icon_weixin{
+    background: url("../images/common/login3.png");
+}
+.submitBtn{
+    display: block;
+    width: 308px;
+    height: 39px;
+    border-radius: 3px;
+    line-height: 39px;
+    background: #00b38a;
+    text-align: center;
+    margin: 15px 0px;
+    color: #fff;
+}
+.login {
+    padding: 16px 0 0 20px;
+    text-align: right;
+    font-size: 16px;
+    color: #999999;
+}
+.login img{
+    position: relative;
+    top: 3px;
+    left: 10px;
+}
+.reflash {
+    position: absolute;
+    height: 48px;
+    width: 19px;
+    background: url("https://www.lgstatic.com/passport/static/pc/modules/common/img/icon-reflash_a187c0b.jpg") center center no-repeat;
+    top: 8px;
+    right: 7px;
+}
+.yzmli{
+    position: relative;
+}
+.yzm{
+    position: absolute;
+    left: 164px;
+    top: 12px;
+}
